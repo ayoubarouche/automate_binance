@@ -48,7 +48,7 @@ while(CONFIG_TEMP_INDEX LESS CONFIG_SIZE)
 endwhile()
 
 # configure the configuration file header : 
-configure_file("${PROJECT_SOURCE_DIR}/websocket_parser/configuration.config" "${PROJECT_SOURCE_DIR}/websocket_parser/configuration.hpp" @ONLY)
+configure_file("${PROJECT_SOURCE_DIR}/websocket_parser/configuration_parameters.config" "${PROJECT_SOURCE_DIR}/websocket_parser/configuration_parameters.hpp" @ONLY)
 message(${BINANCE_API_KEY})
 
 add_subdirectory(websocket_parser)

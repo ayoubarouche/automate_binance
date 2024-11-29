@@ -1,4 +1,4 @@
 
 add_subdirectory(core)
-add_executable(kestar_binance kestar_binance.cpp)
+add_executable(kestar_binance kestar_binance.cpp ConfigurationManager.cpp)
 target_link_libraries(kestar_binance PRIVATE core)

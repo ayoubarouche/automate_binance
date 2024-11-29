@@ -1,7 +1,14 @@
 #include <iostream>
-
+#include "ConfigurationManager.hpp"
 int main(int argc, char const *argv[])
 {
-    std::cout << "hello world" << std::endl;
+
+    ConfigurationManager *configuration_manager = ConfigurationManager::create_instance();
+
+    if (configuration_manager != nullptr)
+    {
+        std::cout << "configuration_manager!= null\n";
+    }
+    std::cout << "maroc life" << std::endl;
     return 0;
 }
